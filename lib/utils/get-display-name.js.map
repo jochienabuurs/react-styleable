@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/utils/get-display-name.js"],"names":[],"mappings":";;;;;kBAAwB,c;AAAT,SAAS,cAAT,CAAwB,SAAxB,EAAmC;AAChD,SAAO,UAAU,WAAV,IAAyB,UAAU,IAAnC,IAA2C,WAAlD;AACD","file":"get-display-name.js","sourcesContent":["export default function getDisplayName(Component) {\n  return Component.displayName || Component.name || 'Component';\n}\n"]}
