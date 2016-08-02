@@ -48,8 +48,14 @@ export default function styleable(stylesheet) {
           }
         });
       }
-      styledFn.defaultProps = DecoratedComponent.defaultProps
-      styledFn.propTypes = DecoratedComponent.propTypes
+      styledFn.defaultProps = {
+        ...DecoratedComponent.defaultProps,
+        css: {}
+      }
+      styledFn.propTypes = {
+        ...DecoratedComponent.propTypes,
+        css: React.PropTypes.object
+      }
       return styledFn
     }
     else
